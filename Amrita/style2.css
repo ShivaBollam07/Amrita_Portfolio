@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&displa=swap");*
+{
+    margin :0;
+    padding : 0;
+    font-family: 'poppins',sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#fead06,#c00def);
+  
+}
+.container{
+    position: relative;
+    padding: 40px 40px;
+    background :#fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+   padding-top: 50px;
+}
+.container h2{
+    color: #111;
+    margin-bottom: 45px ;
+    line-height: 1em;
+    font-weight: 700;
+    padding-left: 10px;
+    border-left: 5px solid red;    
+    
+}
+.container .inputbox{
+    position: relative;
+    width: 300px;
+    height: 45px;
+    margin-bottom: 35px;
+}
+.container .inputbox:last-child{
+    margin-bottom: 0;
+}
+.container .inputbox input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    border :1px solid #111;
+    background:transparent;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    cursor: pointer;
+    
+ 
+}
+
+.container .inputbox span{
+    position:absolute;
+    top: 1px;
+    left: 4px;
+    
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    transition: 0.5x;
+    pointer-events: none;
+    
+}
+
+
+.container .inputbox input:focus ~ span{
+    transform: translateX(-32px) translateY(-32px);
+    color: green;
+
+}
+.container .inputbox input:valid ~ span{
+    transform:  translateX(-10px) translateY(-32px);
+   font-size: 12px;
+}
+.container.inputbox button1{
+    background-color: green;
+
+   
+}
+
+
+.btn1{
+    background-color: #c00def;
+    border-radius: 6px;
+}
+.btn2{
+    color: green;
+    border : none;
+    cursor: pointer;
+    
+    
+}
